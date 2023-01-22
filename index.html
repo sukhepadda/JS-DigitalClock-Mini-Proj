@@ -7,14 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+
 </head>
 
 <body>
-    <!-- clock -->
-    <h1>clock</h1>
-    <h1 id="clock"></h1>
-    
-    <script src="script.js"></script>
+    <center>
+        <h1>DIGITAL CLOCK</h1>
+        <b>Format your Time</b>
+        <br><br>
+        <input type="checkbox" onchange="btnToggle();" id="switch"
+                    class="checkbox" />
+        <label for="switch" class="toggle">
+             
+ 
+<p>12hrs    24hrs</p>
+ 
+ 
+        </label>
+    </center>
+        <div class="main">
+            <div>
+                <span id="clockHour"></span>
+                <label for="clockHour">Hours</label>
+            </div>
+            <div>
+                <span id="clockMin"></span>
+                <label for="clockMin">Minutes</label>
+            </div>
+            <div>
+                <span id="clockSec"></span>
+                <label for="clockSec">Seconds</label>
+            </div>
+        </div>
+        <div>
+            <span id="clockMiliSec"></span>
+            <br> <label for="clockMiliSec">MiliSeconds</label>
+        </div>
+
+        <div>
+            <span id="amPm"></span>
+            
+        </div>
+        <!-- clock -->
+        <!-- <h1 id="clock"></h1> -->
+        <script src="script.js"></script>
 </body>
 
 </html>
