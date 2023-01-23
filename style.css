@@ -2,34 +2,41 @@ body{
     background-color: rgb(19, 15, 15);
     color: aqua;
     text-align: center;
-    margin-top: 130px;
+    margin-top: 30px;
     font-family: 'Orbitron', sans-serif;
 }
 #clockHour{
     font-size: 70px;
 }
 #clockMin{
-    font-size: 70px;
-    
+    font-size: 70px; 
 }
 #clockSec{
     font-size: 70px;
 }
 #clockMiliSec{
     padding:20px;
+    margin-bottom: 20px;
 }
 .main{
     display: flex;
     justify-content: center;
 }
 .main > div{
-    margin: auto;
+    margin: 20px;
 }
 
 h1 {
     color: green;
+    font-size: 62px;
 }
-       
+.headpara{
+    font-size: 28px;
+    margin-bottom: -10px;
+}
+#amPm{
+    font-size: 60px;
+} 
 /* toggle in label designing */
 .toggle {
     position : relative ;
