@@ -44,7 +44,8 @@ function btnToggle() {
     clearInterval(my24hrsInterval);
     const my12hrsInterval = setInterval(clock12hrs, 1);
   } else {
-    location.reload();
+    window.location.reload(); //reload for windows
+    //  history.go(0);// reload for codepen
   }
 }
 const my24hrsInterval = setInterval(clock24hrs, 1);
