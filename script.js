@@ -38,14 +38,20 @@ function clock12hrs() {
   }
 }
 
+
+
+
+let myInterval = setInterval(clock24hrs, 1);
+
 function btnToggle() {
   let switchToggle = document.getElementById("switch");
-  if (switchToggle.checked == true) {
-    clearInterval(my24hrsInterval);
-    const my12hrsInterval = setInterval(clock12hrs, 1);
+
+  clearInterval(myInterval);
+
+  if (switchToggle.checked) {
+    myInterval = setInterval(clock12hrs, 1);
   } else {
-    window.location.reload(); //reload for windows
-    //  history.go(0);// reload for codepen
+    myInterval = setInterval(clock24hrs, 1);
+    document.querySelector("#amPm").innerText = "";
   }
 }
-const my24hrsInterval = setInterval(clock24hrs, 1);
