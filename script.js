@@ -39,8 +39,6 @@ function clock12hrs() {
 }
 
 
-
-
 let myInterval = setInterval(clock24hrs, 1);
 
 function btnToggle() {
@@ -53,5 +51,9 @@ function btnToggle() {
   } else {
     myInterval = setInterval(clock24hrs, 1);
     document.querySelector("#amPm").innerText = "";
+
   }
 }
+
+
+
